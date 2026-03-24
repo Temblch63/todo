@@ -1,0 +1,33 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  font-size: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+  color: teal;
+
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid black;
+  background: rgb(7, 182, 182);
+  padding: 10px;
+  font-size: 15px;
+}
+
+.toggle {
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+}
