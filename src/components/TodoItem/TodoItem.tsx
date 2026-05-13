@@ -1,7 +1,13 @@
 import s from './TodoItem.module.css'
-import { useTodoStore } from '../../store/todoStore';
+import { useTodoStore } from '../../store/useTodoStore';
+import { Todo } from '../../store/useTodoStore';
+import { FC } from 'react';
 
-export const TodoItem = ({ todo }) => {
+type TodoItemProps = {
+   todo: Todo
+}
+
+export const TodoItem: FC<TodoItemProps> = ({ todo }) => {
   const toggleTodo = useTodoStore((state) => state.toggleTodo)
   const deleteTask = useTodoStore((state) => state.deleteTask)
 
@@ -16,6 +22,7 @@ export const TodoItem = ({ todo }) => {
         ✔️
       </span>
       <span
+        className={s.title}
         style={{
           textDecoration: todo.isDone ? 'line-through' : 'none',
           opacity: todo.isDone ? 0.5 : 1

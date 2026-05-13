@@ -10,10 +10,11 @@
   padding: 5px;
   margin-bottom: 10px;
   color: teal;
-
+  width: 100%;
 }
 
 .btn {
+  flex-shrink: 0;
   cursor: pointer;
   border-radius: 10px;
   border: 1px solid black;
@@ -23,9 +24,16 @@
 }
 
 .toggle {
+  flex-shrink: 0;
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.title {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  text-align: center;
 }
 
 .done {

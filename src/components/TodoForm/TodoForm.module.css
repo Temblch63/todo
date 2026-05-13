@@ -1,27 +1,48 @@
 .form {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   width: 100%;
 }
 
 .input {
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid black;
-  font-size: 15px;
-  margin: 10px 0;
+   flex: 1;
+   min-width: 0;
+   padding: 10px;
+   border-radius: 10px;
+   border: 1px solid black;
+   font-size: 15px;
+   margin: 10px 0;
+}
+
+.inputFilter {
+   flex: 1;
+   min-width: 0;
+   padding: 10px;
+   border-radius: 10px;
+   border: 1px solid black;
+   font-size: 15px;
+   margin: 10px 0;
+
+}
+
+.searchRow {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   width: 100%;
 }
 
 .btn {
-  cursor: pointer;
-  border-radius: 10px;
-  border: 1px solid black;
-  background: rgb(7, 182, 182);
-  padding: 10px;
-  font-size: 15px;
+   flex-shrink: 0;
+   cursor: pointer;
+   border-radius: 10px;
+   border: 1px solid black;
+   background: rgb(7, 182, 182);
+   padding: 10px;
+   font-size: 15px;
 }
 
 h1 {
-  margin: 0 auto;
+   margin: 0 auto;
 }
-
