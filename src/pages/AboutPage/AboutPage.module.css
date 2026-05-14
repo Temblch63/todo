@@ -1,0 +1,4 @@
+.about {
+  width: min(100% - 32px, 600px);
+  margin: 20px auto;
+}

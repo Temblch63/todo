@@ -8,17 +8,36 @@ li, ul {
   list-style: none;
 }
 
-.app {
+
+.nav {
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
+  justify-content: center;
+  gap: 8px;
   margin-top: 20px;
 }
 
-.todoPanel {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  width: min(100% - 32px, 350px);
+.navLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid #222;
+  border-radius: 6px;
+  background: #fff;
+  color: #222;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  background: #f0f0f0;
+}
+
+.active {
+  background: #222;
+  color: #fff;
+}
+
+.active:hover {
+  background: #222;
 }
